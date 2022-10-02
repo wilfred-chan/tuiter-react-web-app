@@ -1,0 +1,69 @@
+body {
+  background-color: black;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  height: 20px;
+  width: 85%;
+  border-radius: 50px;
+  color: white;
+  background-color: rgb(47, 51, 54);
+}
+
+.wd-searchbar-icon {
+  color: white;
+  position: absolute;
+  right: 12px;
+}
+
+.wd-wrapper {
+  border: 1px solid rgb(47, 51, 54);
+  position: relative;
+  left: 16px;
+}
+
+.wd-header {
+  border: 1px solid rgb(47, 51, 54);
+}
+ul > li {
+  display: inline;
+}
+ul > li > a {
+  font-size: 15px;
+  color: rgb(110, 118, 125);
+  padding: 16px 16px;
+}
+.wd-highlight {
+  color: rgb(29, 161, 242);
+}
+
+.wd-suggested {
+  border: 1px solid rgb(47, 51, 54);
+  padding: 10px;
+}
+.wd-suggested > div {
+  padding: 3px 16px;
+}
+.wd-trending-topic {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+.wd-tuit-number {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+.wd-timestamp {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-suggested-pic {
+  height: 100px;
+}
+.wd-suggested-pic > img {
+  float: right;
+  border-radius: 15px;
+  margin-right: 16px;
+}
