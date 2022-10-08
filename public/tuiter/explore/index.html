@@ -3,74 +3,296 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tuiter - Explore</title>
-    <link href="../styles.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link
+      href="../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="wd-wrapper">
-      <div class="wd-header">
-        <div class="wd-searchbar">
-          <input type="text" placeholder="Search Tuiter" />
-          <a class="wd-searchbar-icon" href="explore-settings.html">
-            <img src="gear.png" width="20px" height="20px" alt="settings" />
-          </a>
-        </div>
-
-        <div class="wd-category">
-          <ul>
-            <li><a class="wd-highlight" href="">For you</a></li>
-            <li><a href="">Trending</a></li>
-            <li><a href="">COVID-19</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Sports</a></li>
-            <li><a href="">Entertainment</a></li>
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-2">
+          <ul class="nav flex-column nav-pills">
+            <li class="nav-item border">
+              <a
+                class="nav-link disabled text-body"
+                aria-current="page"
+                href="#"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item border">
+              <a class="nav-link" href="#">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav-item border">
+              <a class="nav-link active rounded-0" aria-current="page" href="#">
+                <i class="fas fa-hashtag"></i>
+                Explore
+              </a>
+            </li>
+            <li class="nav-item border">
+              <a class="nav-link" href="#">
+                <i class="fas fa-bell"></i>
+                Notifications
+              </a>
+            </li>
+            <li class="nav-item border">
+              <a class="nav-link" href="#">
+                <i class="fas fa-envelope"></i>
+                Messages
+              </a>
+            </li>
+            <li class="nav-item border">
+              <a class="nav-link" href="#">
+                <i class="fas fa-bookmark"></i>
+                Bookmarks
+              </a>
+            </li>
+            <li class="nav-item border">
+              <a class="nav-link" href="#">
+                <i class="fas fa-list"></i>
+                Lists
+              </a>
+            </li>
+            <li class="nav-item border">
+              <a class="nav-link" href="#">
+                <i class="fas fa-user"></i>
+                Profile
+              </a>
+            </li>
+            <li class="nav-item border">
+              <a class="nav-link" href="#">
+                <i class="fas fa-ellipsis-h"></i>
+                More
+              </a>
+            </li>
           </ul>
-        </div>
-      </div>
-      <div class="wd-suggested-wrappers">
-        <div class="wd-suggested">
-          <div class="wd-trending-topic">Trending in Science</div>
-          <div>Starship</div>
-          <div class="wd-tuit-number">55.5k Tuits</div>
-        </div>
-        <div class="wd-suggested">
-          <div class="wd-trending-topic">Sports Trending</div>
-          <div>Joe Rogan</div>
-          <div class="wd-tuit-number">5,218 Tuits</div>
-        </div>
-        <div class="wd-suggested wd-suggested-pic">
-          <img
-            class="wd-topic-pic"
-            src="nyt.png"
-            width="100px"
-            height="100px"
-            alt="nyt"
-          />
-          <div>
-            The New York Times <span class="wd-timestamp">Yesterday</span>
-          </div>
-          <div>
-            CNN's Cuomo Conundrum: A Star Anchor With a Brother in Trouble
+          <div class="d-grid mt-2 mb-2">
+            <button class="btn btn-primary rounded-pill" type="button">
+              Tweet
+            </button>
           </div>
         </div>
-        <div class="wd-suggested wd-suggested-pic">
-          <img src="covid.png" width="100px" height="100px" alt="covid-19" />
-          <div class="wd-trending-topic">COVID 19 Live</div>
-          <div>COVID-19: News and updates for California</div>
-        </div>
-        <div class="wd-suggested wd-suggested-pic">
-          <img src="nyt.png" width="100px" height="100px" alt="nyt" />
-          <div>
-            The New York Times <span class="wd-timestamp">Yesterday</span>
+        <div class="col-6">
+          <div class="input-group flex-nowrap">
+            <i
+              class="fas fa-search input-group-text p-3"
+              id="addon-wrapping"
+            ></i>
+            <input
+              type="text"
+              class="form-control rounded-pill px-5"
+              placeholder="Search Tuiter"
+              aria-label="Search"
+              aria-describedby="addon-wrapping"
+            />
+            <button class="btn">
+              <i class="fas fa-cog fa-2x text-primary"></i>
+            </button>
           </div>
-          <div>
-            CNN's Cuomo Conundrum: A Star Anchor With a Brother in Trouble
+          <ul class="nav nav-tabs my-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                For you
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entertainment</a>
+            </li>
+          </ul>
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pics/spacex.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-block fs-1 fw-bold text-start">
+                  SpaceX's Starship
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card row rounded-0">
+              <div class="card-body">
+                <div class="card-body-text">
+                  <img
+                    src="pics/react-js-logo.png"
+                    class="rounded-4 float-end"
+                    alt="React JS logo"
+                  />
+                  <h6 class="card-subtitle text-muted mb-2">Web Development</h6>
+                  <h5 class="card-title fw-bold">
+                    React JS<i class="fas fa-check-circle mx-2"></i
+                    ><span class="text-muted fw-normal">- 2h</span>
+                  </h5>
+                  <p class="card-text fw-bold">
+                    React.js is a component-based front end library that makes
+                    it very easy to build Single Page Applications or (SPAs).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card row rounded-0">
+              <div class="card-body">
+                <div class="card-body-text">
+                  <img
+                    src="pics/js-logo.jpg"
+                    class="rounded-4 float-end"
+                    alt="JavaScript logo"
+                  />
+                  <h5 class="card-title fw-bold">
+                    JavaScript<i class="fas fa-check-circle mx-2"></i
+                    ><span class="text-muted fw-normal">- 2h</span>
+                  </h5>
+                  <p class="card-text fw-bold">
+                    JavaScript is a programming language that can run on
+                    browsers as well as dekstops.
+                  </p>
+                  <h6 class="card-subtitle text-muted">123K Tweets</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card row rounded-0">
+              <div class="card-body">
+                <div class="card-body-text">
+                  <img
+                    src="pics/jquery-logo.png"
+                    class="rounded-4 float-end"
+                    alt="jQuery logo"
+                  />
+                  <h6 class="card-subtitle text-muted mb-2">Web Development</h6>
+                  <h5 class="card-title fw-bold">jQuery</h5>
+                  <h6 class="card-subtitle text-muted">123K Tweets</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card row rounded-0">
+              <div class="card-body">
+                <div class="card-body-text">
+                  <img
+                    src="pics/nodejs-logo.png"
+                    class="rounded-4 float-end"
+                    alt="React JS logo"
+                  />
+                  <h6 class="card-subtitle text-muted mb-2">Web Development</h6>
+                  <h5 class="card-title fw-bold">
+                    NodeJS<i class="fas fa-check-circle mx-2"></i
+                    ><span class="text-muted fw-normal">- 2h</span>
+                  </h5>
+                  <h6 class="card-subtitle text-muted">123K Tweets</h6>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="wd-suggested">
-          <div class="wd-trending-topic">Trending in United States</div>
-          <div>Wonder Bread</div>
-          <div class="wd-tuit-number">1,259 Tuits</div>
+        <div class="col-4">
+          <ul class="list-group">
+            <li class="list-group-item fw-bold">Who to follow</li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              <img
+                src="pics/avatar/java.png"
+                class="rounded-circle float-end"
+              />
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">
+                  Java<i class="fas fa-check-circle mx-2"></i>
+                </div>
+                @java
+              </div>
+              <button type="button" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              <img
+                src="pics/avatar/relativity_space.jpg"
+                class="rounded-circle float-end"
+              />
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">
+                  Relativity Space<i class="fas fa-check-circle mx-2"></i>
+                </div>
+                @relativityspace
+              </div>
+              <button type="button" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              <img
+                src="pics/avatar/virgin.jpg"
+                class="rounded-circle float-end"
+              />
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">
+                  Virgin Galactic<i class="fas fa-check-circle mx-2"></i>
+                </div>
+                @virgingalactic
+              </div>
+              <button type="button" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              <img
+                src="pics/avatar/nasa.jpg"
+                class="rounded-circle float-end"
+              />
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">
+                  NASA<i class="fas fa-check-circle mx-2"></i>
+                </div>
+                @NASA
+              </div>
+              <button type="button" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              <img
+                src="pics/avatar/tesla.png"
+                class="rounded-circle float-end"
+              />
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">
+                  Tesla<i class="fas fa-check-circle mx-2"></i>
+                </div>
+                @Tesla
+              </div>
+              <button type="button" class="btn btn-primary rounded-pill">
+                Follow
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
