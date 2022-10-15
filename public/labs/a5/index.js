@@ -207,5 +207,9 @@ const init = () => {
     // 2.16
     const newLineItem = $("<li>Line item 1</li>");
     const anotherLineItem = $("<li>Line item 2</li>");
+    // 2.17
+    const ul = $("#append-new-elements");
+    ul.append(newLineItem);
+    ul.append(anotherLineItem);
  }
  $(init);
