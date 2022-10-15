@@ -61,7 +61,7 @@ if(!false1) {
    console.log('false1');
 }
 console.log('Ternary conditional operator');
-const loggedIn = true;
+var loggedIn = true;
 const greeting = loggedIn ? 'Welcome!' : 'Please login';
 console.log(greeting)
 
@@ -156,3 +156,21 @@ const oddNumbers = numberArray1
 console.log(numbersGreaterThan2);
 console.log(evenNumbers);
 console.log(oddNumbers);
+
+// template strings
+console.log('Template strings');
+const five = 2 + 3;
+const result1 = "2 + 3 = " + five;
+console.log(result1);
+
+const result2 = `2 + 3 = ${2 + 3}`;
+console.log(result2);
+
+const username = "alice";
+const greeting1 = `Welcome home ${username}`;
+console.log(greeting1);
+
+loggedIn = false;
+const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
+console.log(greeting2)
+
