@@ -174,3 +174,9 @@ loggedIn = false;
 const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
 console.log(greeting2)
 
+// 2.10 Executing jQuery
+const init = () => {
+    console.log('Hello world from jQuery');
+    /* do the rest of the lab work here */
+ }
+ $(init);
