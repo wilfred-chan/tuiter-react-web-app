@@ -199,5 +199,10 @@ const init = () => {
     addClass1Example.addClass('class-1');
     const removeClass1Example = $("#remove-class-1");
     removeClass1Example.removeClass('class-2');
+    console.log('Hiding and showing content');
+    const hideMe = $("#hide-me");
+    hideMe.hide();
+    const showMe = $("#show-me");
+    showMe.show();
  }
  $(init);
