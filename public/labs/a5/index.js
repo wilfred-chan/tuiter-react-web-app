@@ -50,3 +50,18 @@ console.log(sortaTrue);
 let notTrue = '1' === 1
 console.log(notTrue);
 
+console.log('If else');
+if(true1) {
+   console.log(true);
+}
+
+if(!false1) {
+   console.log('!false1');
+} else {
+   console.log('false1');
+}
+console.log('Ternary conditional operator');
+const loggedIn = true;
+const greeting = loggedIn ? 'Welcome!' : 'Please login';
+console.log(greeting)
+
