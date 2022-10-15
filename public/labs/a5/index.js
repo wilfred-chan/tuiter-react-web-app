@@ -188,5 +188,11 @@ const init = () => {
     const changeStyle2 = $('.change-style');
     changeStyle.css('color', 'red');
     changeStyle2.css('color', 'blue');
+    console.log('Get and set attributes');
+    const getIdAttr = $("#get-id-attr");
+    const id = getIdAttr.attr('id');
+    console.log(id);
+    const setClassAttr = $("#set-class-attr");
+    setClassAttr.attr('class', 'class-0');
  }
  $(init);
