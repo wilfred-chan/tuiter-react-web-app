@@ -211,5 +211,10 @@ const init = () => {
     const ul = $("#append-new-elements");
     ul.append(newLineItem);
     ul.append(anotherLineItem);
+    // 2.18
+    const removeLi =$("#remove-this");
+    const emptyUl = $("#empty-this");
+    removeLi.remove();
+    emptyUl.empty();
  }
  $(init);
