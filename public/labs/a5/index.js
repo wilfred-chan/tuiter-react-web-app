@@ -194,15 +194,18 @@ const init = () => {
     console.log(id);
     const setClassAttr = $("#set-class-attr");
     setClassAttr.attr('class', 'class-0');
-    console.log('Adding and removing classes');
+    // 2.14
     const addClass1Example = $("#add-class-1");
     addClass1Example.addClass('class-1');
     const removeClass1Example = $("#remove-class-1");
     removeClass1Example.removeClass('class-2');
-    console.log('Hiding and showing content');
+    // 2.15 
     const hideMe = $("#hide-me");
     hideMe.hide();
     const showMe = $("#show-me");
     showMe.show();
+    // 2.16
+    const newLineItem = $("<li>Line item 1</li>");
+    const anotherLineItem = $("<li>Line item 2</li>");
  }
  $(init);
