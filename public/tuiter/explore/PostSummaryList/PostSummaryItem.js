@@ -1,12 +1,3 @@
-let post = {
-  topic: "Web Development",
-  userName: "ReactJS",
-  time: "2h",
-  image: "/public/images/post/react-js-logo.png",
-  title:
-    "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-};
-
 const PostSummaryItem = (post) => {
   return `
   <div class="card row rounded-0">
@@ -31,4 +22,4 @@ const PostSummaryItem = (post) => {
   </div>`;
 };
 
-$("#wd-test").append(PostSummaryItem(post));
+export default PostSummaryItem;
