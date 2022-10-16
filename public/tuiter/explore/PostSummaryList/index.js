@@ -7,4 +7,4 @@ const PostSummaryList = () => {
     `;
 };
 
-$("#wd-test").append(PostSummaryList());
+export default PostSummaryList;
