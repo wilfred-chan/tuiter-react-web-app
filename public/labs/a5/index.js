@@ -216,5 +216,16 @@ const init = () => {
     const emptyUl = $("#empty-this");
     removeLi.remove();
     emptyUl.empty();
+    // 2.19
+    const changeThisText =
+    $("#change-this-text");
+    const changeThisHtml =
+    $("#change-this-html");
+    changeThisText.html('New text');
+    changeThisHtml.html(`
+        <li>Line item A</li>
+        <li>Line item B</li>
+        <li>Line item C</li>
+    `);
  }
  $(init);
