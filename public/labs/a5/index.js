@@ -237,6 +237,11 @@ const init = () => {
     const parent = $("#parent");
     const child = parent.find("#child-2");
     child.css('background-color', 'blue')
+    // 2.21
+    const handleClick =
+    () => console.log('Handle click');
+    const clickable = $('.clickable');
+    clickable.click(handleClick);
 
  }
  $(init);
