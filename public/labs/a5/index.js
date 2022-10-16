@@ -242,6 +242,16 @@ const init = () => {
     () => console.log('Handle click');
     const clickable = $('.clickable');
     clickable.click(handleClick);
-
+    // 2.22
+    const handleEventTarget = (event) => {
+        const target = event.target;
+        console.log(target);
+        $(target)
+            .css('background-color', 'blue')
+            .css('color', 'white');
+     }
+     const eventTarget = $("#event-target");
+     eventTarget.click(handleEventTarget);
+     
  }
  $(init);
