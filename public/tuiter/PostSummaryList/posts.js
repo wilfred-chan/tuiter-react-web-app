@@ -5,7 +5,7 @@ export default [
     time: "2h",
     title:
       "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-    image: "/public/images/post/react-js-logo.png",
+    image: "../../images/post/react-js-logo.png",
   },
   {
     topic: "",
@@ -13,7 +13,7 @@ export default [
     time: "1 day",
     title:
       "JavaScript is programming language that can run on browsers as well as desktops",
-    image: "/public/images/post/js-logo.png",
+    image: "../../images/post/js-logo.png",
     tweets: "123K",
   },
   {
@@ -21,7 +21,7 @@ export default [
     userName: "",
     title: "jQuery",
     time: "last week",
-    image: "/public/images/post/jquery-logo.png",
+    image: "../../images/post/jquery-logo.png",
     tweets: "122K",
   },
   {
@@ -29,7 +29,7 @@ export default [
     userName: "NodeJS",
     title: "",
     time: "last month",
-    image: "/public/images/post/nodejs-logo.png",
+    image: "../../images/post/nodejs-logo.png",
     tweets: "120K",
   },
 ];

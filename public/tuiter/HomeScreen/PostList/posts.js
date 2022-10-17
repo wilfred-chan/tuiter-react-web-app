@@ -1,7 +1,7 @@
 export default [
   {
-    avatarIcon: "/public/images/avatar/nasa.jpg",
-    banner: "/public/images/paris.png",
+    avatarIcon: "../../images/avatar/nasa.jpg",
+    banner: "../../images/paris.png",
     content:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Similique harum quas aperiam tenetur incidunt doloribus porro iure tempora, ipsa inventore unde nobis iste ducimus repudiandae facere sit minima animi nisi.",
     userName: "NASA",
@@ -13,8 +13,8 @@ export default [
     linkURL: "https://www.netflix.com/title/81215567",
   },
   {
-    avatarIcon: "/public/images/avatar/virgin.jpg",
-    banner: "/public/images/ubuntu.png",
+    avatarIcon: "../../images/avatar/virgin.jpg",
+    banner: "../../images/ubuntu.png",
     content:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. Similique harum quas aperiam tenetur incidunt doloribus porro iure tempora, ipsa inventore unde nobis iste ducimus repudiandae facere sit minima animi nisi.",
     userName: "Virgin Galactic",
