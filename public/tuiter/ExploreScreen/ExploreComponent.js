@@ -1,4 +1,4 @@
-import PostSummaryList from "./PostSummaryList/index.js";
+import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
   return `
@@ -44,7 +44,7 @@ const ExploreComponent = () => {
     >
     <div class="carousel-inner">
         <div class="carousel-item active">
-        <img src="pics/spacex.png" class="d-block w-100" alt="..." />
+        <img src="/public/images/post/spacex.png" class="d-block w-100" alt="..." />
         <div class="carousel-caption d-block fs-1 fw-bold text-start">
             SpaceX's Starship
         </div>

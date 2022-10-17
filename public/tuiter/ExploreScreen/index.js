@@ -1,5 +1,5 @@
-import NavigationSidebar from "./NavigationSidebar/index.js";
-import WhoToFollowList from "./WhoToFollowList/index.js";
+import NavigationSidebar from "../NavigationSidebar/index.js";
+import WhoToFollowList from "../WhoToFollowList/index.js";
 import ExploreComponent from "./ExploreComponent.js";
 
 function exploreComponent() {
@@ -18,7 +18,6 @@ function exploreComponent() {
          ${WhoToFollowList()}
         </div>
        </div>
-     
     `);
 }
 
