@@ -1,4 +1,4 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
   return `
     <ul class="nav flex-column nav-pills">
             <li class="nav-item border">
@@ -11,13 +11,17 @@ const NavigationSidebar = () => {
               </a>
             </li>
             <li class="nav-item border">
-              <a class="nav-link" href="#">
+              <a class="nav-link ${
+                active === "home" ? "active" : ""
+              }" href="../HomeScreen/index.html">
                 <i class="fas fa-home"></i>
                 <span class="d-none d-xl-inline">Home</span>
               </a>
             </li>
             <li class="nav-item border">
-              <a class="nav-link active rounded-0" aria-current="page" href="#">
+              <a class="nav-link ${
+                active === "explore" ? "active" : ""
+              }" aria-current="page" href="../ExploreScreen/index.html">
                 <i class="fas fa-hashtag"></i>
                 <span class="d-none d-xl-inline">Explore</span>
               </a>
