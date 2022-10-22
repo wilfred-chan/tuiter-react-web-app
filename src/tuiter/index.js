@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
+import PostSummaryList from "./post-summary-list/post-summary-item";
 
 function Tuiter() {
   return (
@@ -9,6 +10,7 @@ function Tuiter() {
       <Nav />
       <NavigationSidebar active="home" />
       <WhoToFollowList />
+      <PostSummaryList />
       <h1>Tuiter</h1>
     </div>
   );
