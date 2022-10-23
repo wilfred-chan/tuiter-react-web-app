@@ -15,13 +15,13 @@ const NavigationSidebar = () => {
           to="/tuiter/home"
           className={`list-group-item ${active === "home" ? "active" : ""}`}
         >
-          Home
+          <i className="bi bi-house"></i> Home
         </Link>
         <Link
           to="/tuiter/explore"
           className={`list-group-item ${active === "explore" ? "active" : ""}`}
         >
-          Explore
+          <i className="bi bi-hash"></i> Explore
         </Link>
         <Link
           to="/tuiter/notifications"
@@ -29,13 +29,13 @@ const NavigationSidebar = () => {
             active === "notifications" ? "active" : ""
           }`}
         >
-          Notifications
+          <i className="bi bi-bell"></i> Notifications
         </Link>
         <Link
           to="/tuiter/messages"
           className={`list-group-item ${active === "messages" ? "active" : ""}`}
         >
-          Messages
+          <i className="bi bi-envelope"></i> Messages
         </Link>
         <Link
           to="/tuiter/bookmarks"
@@ -43,25 +43,25 @@ const NavigationSidebar = () => {
             active === "bookmarks" ? "active" : ""
           }`}
         >
-          Bookmarks
+          <i className="bi bi-bookmark"></i> Bookmarks
         </Link>
         <Link
           to="/tuiter/lists"
           className={`list-group-item ${active === "lists" ? "active" : ""}`}
         >
-          Lists
+          <i className="bi bi-list-ul"></i> Lists
         </Link>
         <Link
           to="/tuiter/profile"
           className={`list-group-item ${active === "profile" ? "active" : ""}`}
         >
-          Profile
+          <i className="bi bi-person"></i> Profile
         </Link>
         <Link
           to="/tuiter/more"
           className={`list-group-item ${active === "more" ? "active" : ""}`}
         >
-          More
+          <i className="bi bi-three-dots"></i> More
         </Link>
       </div>
     </>
