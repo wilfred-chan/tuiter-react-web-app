@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { addTodo } from "./reducers/todos-reducer";
 
 const Todos = () => {
   const todos = useSelector((state) => state.todos);
@@ -11,6 +12,10 @@ const Todos = () => {
     };
     setTodo(newTodo);
   };
+  const dispatch = useDispatch();
+  const createTodoClickHandler = () => {
+    dispatch(addTodo(todo));
+  };
 
   return (
     <>
@@ -18,10 +23,18 @@ const Todos = () => {
 
       <ul className="list-group">
         <li className="list-group-item">
+          <button
+            onClick={createTodoClickHandler}
+            className="btn btn-primary w-25 
+                          float-end"
+          >
+            Create
+          </button>
+
           <input
             onChange={todoChangeHandler}
             value={todo.do}
-            className="form-control"
+            className="form-control  w-75"
           />
         </li>
         {todos.map((todo) => (
