@@ -5,10 +5,13 @@ import WhoToFollowList from "./who-to-follow-list";
 import HomeComponent from "./home";
 import { Routes, Route } from "react-router";
 import whoReducer from "./reducers/who-reducer";
+import tuitsReducer from "./reducers/tuits-reducer";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
-const store = configureStore({ reducer: { who: whoReducer } });
+const store = configureStore({
+  reducer: { who: whoReducer, tuits: tuitsReducer },
+});
 
 function Tuiter() {
   return (
