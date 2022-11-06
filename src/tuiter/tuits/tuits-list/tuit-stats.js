@@ -1,4 +1,4 @@
-const PostStats = ({ tuit }) => {
+const TuitStats = ({ tuit }) => {
   return (
     <div
       className="py-2 btn-group d-flex"
@@ -24,7 +24,7 @@ const PostStats = ({ tuit }) => {
         className="btn btn-outline-light border-0 text-muted"
       >
         {tuit.liked ? (
-          <i class="bi bi-heart-fill me-2 text-danger"></i>
+          <i className="bi bi-heart-fill me-2 text-danger"></i>
         ) : (
           <i className="bi bi-heart me-2"></i>
         )}
@@ -40,4 +40,4 @@ const PostStats = ({ tuit }) => {
   );
 };
 
-export default PostStats;
+export default TuitStats;

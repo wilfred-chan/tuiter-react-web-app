@@ -23,7 +23,7 @@ const PostSummaryItem = ({
           <img
             width={70}
             className="float-end rounded-3"
-            src={`/images/post/${post.image}`}
+            src={`/images/avatar/${post.image}`}
           />
         </div>
       </div>
