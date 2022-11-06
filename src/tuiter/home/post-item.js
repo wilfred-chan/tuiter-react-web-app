@@ -43,7 +43,7 @@ const PostItem = ({
           alt="post images"
         />
         <div
-          class="py-2 btn-group d-flex justify-content-between"
+          className="py-2 btn-group d-flex justify-content-between"
           role="group"
           aria-label="Basic outlined example"
         >
