@@ -12,8 +12,12 @@ const NavigationSidebar = () => {
       <i className="bi bi-twitter fs-2 d-block m-2 text-primary"></i>
       <div className="list-group">
         <Link
-          to="/tuiter/home"
-          className={`list-group-item ${active === "home" ? "active" : ""}`}
+          to="/tuiter"
+          className={`list-group-item ${
+            active === "home" || active === undefined || active === ""
+              ? "active"
+              : ""
+          }`}
         >
           <i className="bi bi-house"></i> Home
         </Link>
