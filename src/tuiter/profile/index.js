@@ -7,7 +7,9 @@ const ProfileComponent = () => {
     <div className="border pb-3">
       <div className="row">
         <div className="col-2 d-flex justify-content-center align-items-center">
-          <i className="bi bi-arrow-left"></i>
+          <Link to="/tuiter">
+            <i className="bi bi-arrow-left"></i>
+          </Link>
         </div>
         <div className="col-10">
           <div className="fw-bold">{profile.name}</div>
