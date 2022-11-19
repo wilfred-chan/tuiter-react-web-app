@@ -1,4 +1,4 @@
-import TuitItem from "../tuits/tuits-list/tuit-item";
+import TuitList from "../tuits/tuits-list/tuit-list";
 import WhatsHappening from "./whats-happening";
 import { useSelector } from "react-redux";
 
@@ -8,11 +8,7 @@ const HomeComponent = () => {
     <>
       <h4>Home</h4>
       <WhatsHappening />
-      <div>
-        {tuits.map((tuit) => (
-          <TuitItem tuit={tuit} key={tuit._id} />
-        ))}
-      </div>
+      <TuitList />
     </>
   );
 };

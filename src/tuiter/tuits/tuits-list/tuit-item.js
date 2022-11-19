@@ -25,7 +25,7 @@ const TuitItem = ({ tuit }) => {
         ></i>
         <div className="wd-text-content">
           <span className="fw-bold me-1">
-            {tuit.userName}
+            {tuit.username}
             <i className="bi bi-patch-check-fill mx-1 text-primary"></i>
           </span>
           {tuit.handle} - {tuit.time}
