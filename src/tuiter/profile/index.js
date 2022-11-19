@@ -7,7 +7,7 @@ const ProfileComponent = () => {
     <div className="border pb-3">
       <div className="row">
         <div className="col-2 d-flex justify-content-center align-items-center">
-          <Link to="/tuiter">
+          <Link to="/">
             <i className="bi bi-arrow-left"></i>
           </Link>
         </div>
@@ -30,7 +30,7 @@ const ProfileComponent = () => {
           src={`/images/avatar/${profile.profilePicture}`}
           alt="user avatar icon"
         ></img>
-        <Link to="/tuiter/edit-profile">
+        <Link to="/edit-profile">
           <button
             type="button"
             className="btn rounded-pill btn-light mx-2 position-absolute bottom-0 end-0"

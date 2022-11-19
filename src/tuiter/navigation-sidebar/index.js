@@ -5,14 +5,14 @@ import { useLocation } from "react-router";
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
   const paths = pathname.split("/");
-  const active = paths[2];
+  const active = paths[1];
 
   return (
     <>
       <i className="bi bi-twitter fs-2 d-block m-2 text-primary"></i>
       <div className="list-group">
         <Link
-          to="/tuiter"
+          to="/"
           className={`list-group-item ${
             active === "home" || active === undefined || active === ""
               ? "active"
@@ -22,13 +22,13 @@ const NavigationSidebar = () => {
           <i className="bi bi-house"></i> Home
         </Link>
         <Link
-          to="/tuiter/explore"
+          to="/explore"
           className={`list-group-item ${active === "explore" ? "active" : ""}`}
         >
           <i className="bi bi-hash"></i> Explore
         </Link>
         <Link
-          to="/tuiter/notifications"
+          to="/notifications"
           className={`list-group-item ${
             active === "notifications" ? "active" : ""
           }`}
@@ -36,13 +36,13 @@ const NavigationSidebar = () => {
           <i className="bi bi-bell"></i> Notifications
         </Link>
         <Link
-          to="/tuiter/messages"
+          to="/messages"
           className={`list-group-item ${active === "messages" ? "active" : ""}`}
         >
           <i className="bi bi-envelope"></i> Messages
         </Link>
         <Link
-          to="/tuiter/bookmarks"
+          to="/bookmarks"
           className={`list-group-item ${
             active === "bookmarks" ? "active" : ""
           }`}
@@ -50,19 +50,19 @@ const NavigationSidebar = () => {
           <i className="bi bi-bookmark"></i> Bookmarks
         </Link>
         <Link
-          to="/tuiter/lists"
+          to="/lists"
           className={`list-group-item ${active === "lists" ? "active" : ""}`}
         >
           <i className="bi bi-list-ul"></i> Lists
         </Link>
         <Link
-          to="/tuiter/profile"
+          to="/profile"
           className={`list-group-item ${active === "profile" ? "active" : ""}`}
         >
           <i className="bi bi-person"></i> Profile
         </Link>
         <Link
-          to="/tuiter/more"
+          to="/more"
           className={`list-group-item ${active === "more" ? "active" : ""}`}
         >
           <i className="bi bi-three-dots"></i> More

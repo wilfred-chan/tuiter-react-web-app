@@ -33,13 +33,13 @@ const EditProfileComponent = () => {
     <div className=" border pb-3">
       <div className="row py-2">
         <div className="col-2 d-flex justify-content-center align-items-center">
-          <Link to="/tuiter/profile">
+          <Link to="/profile">
             <i className="bi bi-x-lg"></i>
           </Link>
         </div>
         <div className="col-10 d-flex justify-content-between align-items-center">
           <div className="fs-5 fw-bold">Edit Profile</div>
-          <Link to="/tuiter/profile">
+          <Link to="/profile">
             <button
               type="button"
               className="btn btn-dark rounded-pill mx-2"
